@@ -154,7 +154,14 @@
         });
 
         const colorScheme = Telegram.WebApp.colorScheme;
-        alert("Your color scheme is: " + colorScheme);
+        //alert("Your color scheme is: " + colorScheme);
+
+        const makeShiny = confirm("Make main button shiny?");
+
+        if (makeShiny) {
+            Telegram.WebApp.MainButton.hasShineEffect = true;
+        }
+        
 
     </script>
 
